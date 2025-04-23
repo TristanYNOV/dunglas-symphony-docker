@@ -1,0 +1,19 @@
+meta {
+  name: Put
+  type: http
+  seq: 5
+}
+
+patch {
+  url: localhost/api/v1/song/602
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Purr on the beach",
+      "artiste": "MCGraou"
+  }
+  
+}

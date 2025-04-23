@@ -1,0 +1,19 @@
+meta {
+  name: createSong
+  type: http
+  seq: 4
+}
+
+post {
+  url: localhost/api/v1/song
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Purr on the beach",
+      "artiste": "Graoutesque"
+  }
+  
+}
